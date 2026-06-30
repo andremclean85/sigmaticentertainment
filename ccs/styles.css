@@ -1,0 +1,64 @@
+/* ===========================================
+   Gallery
+=========================================== */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    background: #111;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.12);
+    box-shadow: 0 10px 30px rgba(255,255,255,.05);
+    transition: all .35s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(255,255,255,.10);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Logo images */
+
+.gallery-item.logo img {
+    object-fit: contain;
+    background: #fff;
+    padding: 20px;
+}
+
+/* Flyer images */
+
+.gallery-item.flyer img {
+    object-fit: contain;
+    background: #111;
+    padding: 10px;
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 320px;
+    }
+}
