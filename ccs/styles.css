@@ -62,3 +62,114 @@
         height: 320px;
     }
 }
+/* ==========================
+   MOBILE FIXES
+========================== */
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    padding: 16px 5%;
+  }
+
+  .logo {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  header {
+    min-height: 85vh;
+  }
+
+  .hero {
+    padding: 150px 6% 60px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
+    line-height: 1.05;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  .main-image-section {
+    padding: 0 5%;
+    margin-top: 35px;
+  }
+
+  .main-image-section img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 18px;
+  }
+
+  section {
+    padding: 60px 5%;
+  }
+
+  section h2 {
+    font-size: 30px;
+  }
+
+  section p {
+    font-size: 16px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .videos {
+    grid-template-columns: 1fr;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+
+  .contact-box {
+    padding: 24px;
+  }
+}
