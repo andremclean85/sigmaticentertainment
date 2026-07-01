@@ -304,17 +304,17 @@ footer {
   }
 
   .hero h1 {
-    font-size: 30px;
-    letter-spacing: 1px;
-    line-height: 1.12;
-    margin-bottom: 18px;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 1.15;
+    margin-bottom: 16px;
   }
 
   .hero p {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.45;
-    max-width: 300px;
-    margin-bottom: 26px;
+    max-width: 280px;
+    margin-bottom: 0 auto 24px;
   }
 
   .btn-group {
@@ -372,12 +372,12 @@ footer {
 
 @media (max-width: 420px) {
   .hero h1 {
-    font-size: 27px;
-    letter-spacing: 0.5px;
+    font-size: 22px;
+    letter-spacing: 0.3px;
   }
 
   .hero p {
-    font-size: 14px;
+    font-size: 12px;
     max-width: 280px;
   }
 
